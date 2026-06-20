@@ -56,7 +56,7 @@ La pregunta de investigación planteada es:
 ```text
 .
 ├── AnalisisExploratorioDatosMachineLearningBasico.ipynb
-├── dataset_creditos.csv
+├── Creditos_Ecuador.csv
 └── README.md
 ```
 
@@ -77,3 +77,50 @@ Desarrollar un modelo predictivo capaz de estimar la probabilidad de aprobación
 **Docente:** Ing. Carlos Wladimir Carrillo Villavicencio MSc. TIC.
 
 **Fecha:** Junio 2026
+
+## Cómo Ejecutar el Proyecto
+
+### Opción 1: Google Colab
+
+1. Descargue el archivo `AnálisisExploratorioDatosMachineLearningBásico.ipynb`.
+2. Ingrese a Google Colab.
+3. Seleccione **Archivo → Subir notebook**.
+4. Cargue el archivo `.ipynb`.
+5. Ejecute las celdas del notebook en orden.
+6. Cuando se solicite, cargue el archivo del dataset correspondiente.
+
+### Opción 2: Jupyter Notebook
+
+1. Instale Python y Jupyter Notebook.
+2. Descargue o clone este repositorio.
+3. Coloque el archivo del dataset en la misma carpeta del notebook.
+4. Abra una terminal en la carpeta del proyecto.
+5. Ejecute:
+
+```bash
+jupyter notebook
+```
+
+6. Abra el archivo `AnálisisExploratorioDatosMachineLearningBásico.ipynb`.
+7. Ejecute las celdas secuencialmente.
+
+### Carga del Dataset
+
+El dataset utilizado debe encontrarse en la misma carpeta que el notebook o ajustarse la ruta de acceso según la ubicación del archivo.
+
+Ejemplo de carga:
+
+```python
+import pandas as pd
+
+df = pd.read_csv('Creditos_Ecuador.csv')
+```
+
+### Requisitos
+
+Instalar las siguientes librerías:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
